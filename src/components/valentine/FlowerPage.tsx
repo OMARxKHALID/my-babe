@@ -183,7 +183,7 @@ const FlowerPage = ({ onComplete }: FlowerPageProps) => {
             animate={{ opacity: 1 }}
             transition={{ delay: 4.2 }}
           >
-            4 is our number, baby, and you are the lucky charm of my life. With
+            4 is our number, babe, and you are the lucky charm of my life. With
             your good soul and energy, it gives me hope and luck to do better
             each day. Finding you feels like finding a rare treasure. You make
             everything brighter just by being in my life. I feel protected and

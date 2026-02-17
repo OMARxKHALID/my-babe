@@ -17,21 +17,21 @@ const memories = [
     image: "/zainab/1.jpg",
     caption: "You in arms!",
     description:
-      "Imagine, you've just come out of surgery and even then, you look so stunning... goodness, babe.",
+      "Imagine, you've just come out of arms and even then, you look so stunning... goodness, babe.",
   },
   {
     id: 2,
     image: "/zainab/2.jpg",
-    caption: "Leopard dress!!",
+    caption: "White dress!!",
     description:
-      "I love this leopard print dress you have - you have no idea how much I love this picture.",
+      "I love this white dress you have - you have no idea how much I love this picture.",
   },
   {
     id: 3,
     image: "/zainab/3.jpg",
     caption: "My World",
     description:
-      "You just got back from an important meeting and you were so tired, but you're truly beautiful from every angle.",
+      "You looks so innocent there looking at the mirror and you're truly beautiful from every angle.",
   },
   {
     id: 4,
@@ -131,7 +131,7 @@ const MemoriesPage = ({ onComplete }: MemoriesPageProps) => {
           FaceTime, I keep on complimenting you because you're pretty as hell...{" "}
           <br />
           I always take pictures of you, even the candid ones, and looking back
-          at them, you look so good baby :( <br />
+          at them, you look so good babe :( <br />
           For now, here are my favorite photos!"
         </p>
 

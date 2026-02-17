@@ -81,7 +81,7 @@ const LetterPage = ({ onComplete }: LetterPageProps) => {
             </h2>
             <p className="text-foreground/90 leading-relaxed text-sm italic px-2">
               'it's almost Valentine's Day, this is my small surprise for you
-              and I hope you'll like it baby,"
+              and I hope you'll like it babe,"
             </p>
 
             <motion.div
