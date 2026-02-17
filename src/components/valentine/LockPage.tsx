@@ -280,7 +280,7 @@ const LockPage = ({ onComplete, onAccessGranted }: LockPageProps) => {
       </AnimatePresence>
 
       <div className="absolute bottom-12 left-12 text-white/5 text-[10px] font-mono tracking-widest uppercase pointer-events-none">
-        Valentine.2025
+        Valentine.2026
       </div>
     </div>
   );
