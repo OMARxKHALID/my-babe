@@ -153,9 +153,9 @@ const FlowerPage = ({ onComplete }: FlowerPageProps) => {
             pretty as you are. This is a Zainab flower and, aside from tulips,
             you're the only one who comes to mind. Lilies feel delicate yet
             strong, just like you. I love how they reflect your beauty and I
-            just can't explain... you look so stunning especially when we
-            FaceTime! Every time I see them, I think of how lucky I am to have
-            you in my life.
+            just can't explain... you look so stunning especially when we Video
+            call eath other! Every time I see them, I think of how lucky I am to
+            have you in my life.
           </motion.p>
         </motion.div>
 

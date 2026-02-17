@@ -127,12 +127,12 @@ const MemoriesPage = ({ onComplete }: MemoriesPageProps) => {
         </div>
 
         <p className="text-xl md:text-2xl text-muted-foreground font-serif-italic leading-relaxed px-4">
-          "You look beautiful even when you're tired, and usually when we
-          FaceTime, I keep on complimenting you because you're pretty as hell...{" "}
-          <br />
+          "You look beautiful even when you're tired, and usually when we are on
+          Video call, I keep on complimenting you because you're pretty as
+          hell... <br />
           I always take pictures of you, even the candid ones, and looking back
           at them, you look so good babe :( <br />
-          For now, here are my favorite photos!"
+          For now, here are some of my favorite photos!"
         </p>
 
         <motion.div
