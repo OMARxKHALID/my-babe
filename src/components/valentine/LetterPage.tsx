@@ -25,11 +25,11 @@ const LetterPage = ({ onComplete }: LetterPageProps) => {
 
   // Calculate background color based on progress (darkening green reveal)
   const getDynamicBg = (progress: number) => {
-    // Light green: hsl(145, 45%, 96%)
-    // Dark green: hsl(145, 60%, 15%)
+    // Light red: hsl(350, 45%, 96%)
+    // Dark red: hsl(350, 60%, 15%)
     const saturation = 45 + (progress / 100) * 15;
     const lightness = 96 - (progress / 100) * 81;
-    return `hsl(145, ${saturation}%, ${lightness}%)`;
+    return `hsl(350, ${saturation}%, ${lightness}%)`;
   };
 
   return (
@@ -41,7 +41,7 @@ const LetterPage = ({ onComplete }: LetterPageProps) => {
         background:
           revealProgress > 0
             ? getDynamicBg(revealProgress)
-            : "hsl(145, 45%, 96%)",
+            : "hsl(350, 45%, 96%)",
       }}
     >
       {/* Base background layer that stays behind */}
@@ -89,7 +89,7 @@ const LetterPage = ({ onComplete }: LetterPageProps) => {
               animate={{ scale: [1, 1.1, 1] }}
               transition={{ duration: 2, repeat: Infinity }}
             >
-              <HeartIcon size={32} color="hsl(145, 40%, 55%)" animate />
+              <HeartIcon size={32} color="hsl(350, 40%, 55%)" animate />
             </motion.div>
           </div>
         </ScratchCanvas>
@@ -115,7 +115,7 @@ const LetterPage = ({ onComplete }: LetterPageProps) => {
               width="16"
               height="16"
               viewBox="0 0 24 24"
-              fill="hsl(145, 40%, 55%)"
+              fill="hsl(350, 40%, 55%)"
             >
               <path d="M12 0L14.59 8.41L23 11L14.59 13.59L12 22L9.41 13.59L1 11L9.41 8.41L12 0Z" />
             </svg>
@@ -124,7 +124,7 @@ const LetterPage = ({ onComplete }: LetterPageProps) => {
               width="16"
               height="16"
               viewBox="0 0 24 24"
-              fill="hsl(145, 40%, 55%)"
+              fill="hsl(350, 40%, 55%)"
             >
               <path d="M12 0L14.59 8.41L23 11L14.59 13.59L12 22L9.41 13.59L1 11L9.41 8.41L12 0Z" />
             </svg>

@@ -59,9 +59,9 @@ const Envelope = ({ isOpen, isPaperOut, onClick }: EnvelopeProps) => {
 
           {/* Realistic envelope gradient with depth */}
           <linearGradient id="envelopeGradient" x1="0%" y1="0%" x2="100%" y2="100%">
-            <stop offset="0%" stopColor="hsl(150, 35%, 94%)" />
-            <stop offset="50%" stopColor="hsl(145, 30%, 90%)" />
-            <stop offset="100%" stopColor="hsl(140, 28%, 88%)" />
+            <stop offset="0%" stopColor="hsl(350, 35%, 94%)" />
+            <stop offset="50%" stopColor="hsl(350, 30%, 90%)" />
+            <stop offset="100%" stopColor="hsl(350, 28%, 88%)" />
           </linearGradient>
 
           {/* Highlight gradient for 3D effect */}
@@ -86,8 +86,8 @@ const Envelope = ({ isOpen, isPaperOut, onClick }: EnvelopeProps) => {
 
           {/* Flap gradient */}
           <linearGradient id="flapGradient" x1="0%" y1="0%" x2="100%" y2="100%">
-            <stop offset="0%" stopColor="hsl(150, 32%, 93%)" />
-            <stop offset="100%" stopColor="hsl(145, 28%, 89%)" />
+            <stop offset="0%" stopColor="hsl(350, 32%, 93%)" />
+            <stop offset="100%" stopColor="hsl(350, 28%, 89%)" />
           </linearGradient>
 
           {/* Inner shadow filter */}
@@ -126,7 +126,7 @@ const Envelope = ({ isOpen, isPaperOut, onClick }: EnvelopeProps) => {
             height="200"
             rx="10"
             fill="url(#envelopeGradient)"
-            stroke="hsl(145, 25%, 80%)"
+            stroke="hsl(350, 25%, 80%)"
             strokeWidth="2.5"
           />
 
@@ -213,7 +213,7 @@ const Envelope = ({ isOpen, isPaperOut, onClick }: EnvelopeProps) => {
           >
             <path
               d="M200 140 l-3-2.5c-6-5.5-10-9-10-13.5 0-3.5 3-6.5 6.5-6.5 2 0 4 1 5.5 2.5 1.5-1.5 3.5-2.5 5.5-2.5 3.5 0 6.5 3 6.5 6.5 0 4.5-4 8-10 13.5L200 140z"
-              fill="hsl(145, 45%, 60%)"
+              fill="hsl(350, 45%, 60%)"
               opacity="0.9"
             />
             {/* Heart highlight */}
@@ -229,8 +229,8 @@ const Envelope = ({ isOpen, isPaperOut, onClick }: EnvelopeProps) => {
         <g>
           <path
             d="M20 80 L20 280 Q20 290 30 290 L370 290 Q380 290 380 280 L380 80 L200 180 Z"
-            fill="hsl(140, 30%, 92%)"
-            stroke="hsl(145, 25%, 80%)"
+            fill="hsl(350, 30%, 92%)"
+            stroke="hsl(350, 25%, 80%)"
             strokeWidth="2.5"
             filter="url(#dropShadow)"
           />
@@ -270,8 +270,8 @@ const Envelope = ({ isOpen, isPaperOut, onClick }: EnvelopeProps) => {
           {/* Flap main - PERFECT TRIANGULAR FLAP */}
           <path
             d="M20 80 L200 170 L380 80 L380 88 Q380 80 370 80 L30 80 Q20 80 20 88Z"
-            fill={isOpen ? "hsl(145, 30%, 88%)" : "url(#flapGradient)"}
-            stroke="hsl(145, 25%, 80%)"
+            fill={isOpen ? "hsl(350, 30%, 88%)" : "url(#flapGradient)"}
+            stroke="hsl(350, 25%, 80%)"
             strokeWidth="2.5"
             filter={isOpen ? "none" : "url(#dropShadow)"}
           />
@@ -296,7 +296,7 @@ const Envelope = ({ isOpen, isPaperOut, onClick }: EnvelopeProps) => {
               y1="90"
               x2="140"
               y2="120"
-              stroke="hsl(145, 15%, 75%)"
+              stroke="hsl(350, 15%, 75%)"
               strokeWidth="1.5"
               opacity="0.6"
             />
@@ -305,7 +305,7 @@ const Envelope = ({ isOpen, isPaperOut, onClick }: EnvelopeProps) => {
               y1="120"
               x2="300"
               y2="90"
-              stroke="hsl(145, 15%, 75%)"
+              stroke="hsl(350, 15%, 75%)"
               strokeWidth="1.5"
               opacity="0.6"
             />
@@ -313,14 +313,14 @@ const Envelope = ({ isOpen, isPaperOut, onClick }: EnvelopeProps) => {
             <path
               d="M50 70 Q45 65 50 60 Q55 65 50 70"
               fill="none"
-              stroke="hsl(145, 20%, 70%)"
+              stroke="hsl(350, 20%, 70%)"
               strokeWidth="1"
               opacity="0.5"
             />
             <path
               d="M350 70 Q355 65 350 60 Q345 65 350 70"
               fill="none"
-              stroke="hsl(145, 20%, 70%)"
+              stroke="hsl(350, 20%, 70%)"
               strokeWidth="1"
               opacity="0.5"
             />
@@ -352,8 +352,8 @@ const Envelope = ({ isOpen, isPaperOut, onClick }: EnvelopeProps) => {
             cx="200"
             cy="170"
             r="28"
-            fill="hsl(145, 45%, 58%)"
-            stroke="hsl(155, 50%, 48%)"
+            fill="hsl(350, 45%, 58%)"
+            stroke="hsl(350, 50%, 48%)"
             strokeWidth="3"
             filter="url(#innerShadow)"
           />
@@ -373,7 +373,7 @@ const Envelope = ({ isOpen, isPaperOut, onClick }: EnvelopeProps) => {
             cy="170"
             r="20"
             fill="none"
-            stroke="hsl(155, 45%, 50%)"
+            stroke="hsl(350, 45%, 50%)"
             strokeWidth="1.5"
             opacity="0.6"
           />
@@ -400,7 +400,7 @@ const Envelope = ({ isOpen, isPaperOut, onClick }: EnvelopeProps) => {
                 y1="170"
                 x2="220"
                 y2="185"
-                stroke="hsl(145, 30%, 40%)"
+                stroke="hsl(350, 30%, 40%)"
                 strokeWidth="2"
                 initial={{ pathLength: 0 }}
                 animate={{ pathLength: 1 }}
@@ -411,7 +411,7 @@ const Envelope = ({ isOpen, isPaperOut, onClick }: EnvelopeProps) => {
                 y1="170"
                 x2="180"
                 y2="185"
-                stroke="hsl(145, 30%, 40%)"
+                stroke="hsl(350, 30%, 40%)"
                 strokeWidth="2"
                 initial={{ pathLength: 0 }}
                 animate={{ pathLength: 1 }}
@@ -458,7 +458,7 @@ const Envelope = ({ isOpen, isPaperOut, onClick }: EnvelopeProps) => {
                 repeatDelay: 2,
               }}
             >
-              <svg width="24" height="24" viewBox="0 0 24 24" fill="hsl(145, 50%, 65%)">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="hsl(350, 50%, 65%)">
                 <path d="M12 0L14.59 8.41L23 11L14.59 13.59L12 22L9.41 13.59L1 11L9.41 8.41L12 0Z" />
               </svg>
             </motion.div>

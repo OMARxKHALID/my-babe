@@ -40,9 +40,9 @@ const ParticleSystem = ({ isActive, count = 30, type = 'mixed' }: ParticleSystem
         duration: 1.5 + Math.random() * 1,
         size: 8 + Math.random() * 12,
         color: [
-          'hsl(145, 50%, 60%)',
-          'hsl(150, 45%, 65%)',
-          'hsl(155, 55%, 55%)',
+          'hsl(350, 50%, 60%)',
+          'hsl(350, 45%, 65%)',
+          'hsl(350, 55%, 55%)',
           'hsl(350, 60%, 70%)',
           'hsl(45, 80%, 65%)',
         ][Math.floor(Math.random() * 5)],

@@ -9,7 +9,7 @@ interface FourLeafCloverIconProps {
 
 const FourLeafCloverIcon = ({ 
   size = 120, 
-  color = 'hsl(145, 50%, 50%)', 
+  color = 'hsl(350, 50%, 50%)', 
   className = '', 
   delay = 0 
 }: FourLeafCloverIconProps) => {
@@ -36,7 +36,7 @@ const FourLeafCloverIcon = ({
       {/* Stem */}
       <motion.path
         d="M50 130 Q48 100 50 70"
-        stroke="hsl(145, 40%, 45%)"
+        stroke="hsl(350, 40%, 45%)"
         strokeWidth="4"
         fill="none"
         strokeLinecap="round"
@@ -48,7 +48,7 @@ const FourLeafCloverIcon = ({
       {/* Small leaf on stem */}
       <motion.path
         d="M50 100 Q35 95 30 80 Q40 88 50 95"
-        fill="hsl(145, 45%, 50%)"
+        fill="hsl(350, 45%, 50%)"
         initial={{ scale: 0, opacity: 0 }}
         animate={{ scale: 1, opacity: 1 }}
         transition={{ duration: 0.8, delay: delay + 0.8 }}
@@ -110,7 +110,7 @@ const FourLeafCloverIcon = ({
           cx="50"
           cy="50"
           r="4"
-          fill="hsl(145, 60%, 40%)"
+          fill="hsl(350, 60%, 40%)"
           initial={{ scale: 0 }}
           animate={{ scale: 1 }}
           transition={{ duration: 0.4, delay: delay + 1.8 }}

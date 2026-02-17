@@ -280,7 +280,7 @@ const QuestionPage = ({ onComplete }: QuestionPageProps) => {
               }}
               transition={{ duration: 1, repeat: 2 }}
             >
-              <HeartIcon size={80} color="hsl(145, 45%, 55%)" animate />
+              <HeartIcon size={80} color="hsl(350, 45%, 55%)" animate />
             </motion.div>
 
             <h2 className="text-3xl md:text-4xl font-serif-italic text-white mb-6">

@@ -28,10 +28,10 @@ const Confetti = ({ isActive }: ConfettiProps) => {
       duration: Math.random() * 2 + 2,
       size: Math.random() * 10 + 5,
       color: [
-        'hsl(145, 40%, 55%)',
-        'hsl(150, 35%, 65%)',
-        'hsl(155, 45%, 50%)',
-        'hsl(140, 30%, 75%)',
+        'hsl(350, 40%, 55%)',
+        'hsl(350, 35%, 65%)',
+        'hsl(350, 45%, 50%)',
+        'hsl(350, 30%, 75%)',
         'hsl(350, 60%, 75%)',
         'hsl(40, 60%, 70%)',
         'hsl(200, 50%, 60%)',
@@ -49,7 +49,7 @@ const Confetti = ({ isActive }: ConfettiProps) => {
       delay: Math.random() * 1.5,
       size: Math.random() * 15 + 10,
       color: [
-        'hsl(145, 50%, 55%)',
+        'hsl(350, 50%, 55%)',
         'hsl(350, 60%, 65%)',
         'hsl(350, 50%, 70%)',
       ][Math.floor(Math.random() * 3)],

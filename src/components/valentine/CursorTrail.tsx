@@ -56,7 +56,7 @@ const CursorTrail = ({ isActive }: CursorTrailProps) => {
             style={{
               left: point.x - 8,
               top: point.y - 8,
-              background: `radial-gradient(circle, hsl(145, 50%, 65%) ${scale * 100}%, transparent)`,
+              background: `radial-gradient(circle, hsl(350, 50%, 65%) ${scale * 100}%, transparent)`,
               opacity,
             }}
             initial={{ scale: 0, opacity: 0 }}

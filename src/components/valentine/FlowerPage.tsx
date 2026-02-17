@@ -24,7 +24,7 @@ const FlowerPage = ({ onComplete }: FlowerPageProps) => {
           className="absolute top-[10%] left-[10%] w-64 h-64 rounded-full"
           style={{
             background:
-              "radial-gradient(circle, hsl(145, 30%, 90%) 0%, transparent 70%)",
+              "radial-gradient(circle, hsl(350, 30%, 90%) 0%, transparent 70%)",
           }}
           animate={{ scale: [1, 1.1, 1], opacity: [0.5, 0.7, 0.5] }}
           transition={{ duration: 6, repeat: Infinity }}
@@ -166,7 +166,7 @@ const FlowerPage = ({ onComplete }: FlowerPageProps) => {
         >
           <FourLeafCloverIcon
             size={110}
-            color="hsl(145, 50%, 50%)"
+            color="hsl(350, 50%, 50%)"
             delay={2.5}
           />
           <motion.p

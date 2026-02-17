@@ -44,7 +44,7 @@ const ScratchCanvas = ({ width, height, onRevealProgress, children }: ScratchCan
     if (!ctx) return;
     
     // Fill with scratch overlay color
-    ctx.fillStyle = 'hsl(145, 35%, 75%)';
+    ctx.fillStyle = 'hsl(350, 35%, 75%)';
     ctx.fillRect(0, 0, width, height);
     
     // Add pattern
@@ -52,7 +52,7 @@ const ScratchCanvas = ({ width, height, onRevealProgress, children }: ScratchCan
     for (let i = 0; i < width; i += 8) {
       for (let j = 0; j < height; j += 8) {
         if ((i + j) % 16 === 0) {
-          ctx.fillStyle = 'hsl(145, 30%, 65%)';
+          ctx.fillStyle = 'hsl(350, 30%, 65%)';
           ctx.fillRect(i, j, 4, 4);
         }
       }
@@ -61,7 +61,7 @@ const ScratchCanvas = ({ width, height, onRevealProgress, children }: ScratchCan
     
     // Add sparkle decoration
     const drawSparkle = (x: number, y: number, size: number) => {
-      ctx.fillStyle = 'hsl(150, 20%, 50%)';
+      ctx.fillStyle = 'hsl(350, 20%, 50%)';
       ctx.beginPath();
       ctx.moveTo(x, y - size);
       ctx.lineTo(x + size * 0.3, y - size * 0.3);
@@ -81,11 +81,11 @@ const ScratchCanvas = ({ width, height, onRevealProgress, children }: ScratchCan
     
     // Add hint text
     ctx.font = 'italic 18px "Instrument Serif", Georgia, serif';
-    ctx.fillStyle = 'hsl(150, 20%, 30%)';
+    ctx.fillStyle = 'hsl(350, 20%, 30%)';
     ctx.textAlign = 'center';
     ctx.fillText('Scratch here to reveal', width / 2, height / 2 - 10);
     ctx.font = '14px Inter, sans-serif';
-    ctx.fillStyle = 'hsl(150, 15%, 40%)';
+    ctx.fillStyle = 'hsl(350, 15%, 40%)';
     ctx.fillText('Use your finger or cursor', width / 2, height / 2 + 20);
   }, [width, height]);
 

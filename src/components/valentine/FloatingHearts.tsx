@@ -28,10 +28,10 @@ const FloatingHearts = ({ count = 10 }: FloatingHeartsProps) => {
       size: 10 + Math.random() * 20,
       opacity: 0.1 + Math.random() * 0.3,
       color: [
-        'hsl(145, 40%, 55%)',
-        'hsl(150, 35%, 60%)',
-        'hsl(155, 45%, 50%)',
-        'hsl(140, 30%, 65%)',
+        'hsl(350, 40%, 55%)',
+        'hsl(350, 35%, 60%)',
+        'hsl(350, 45%, 50%)',
+        'hsl(350, 30%, 65%)',
         'hsl(350, 50%, 70%)',
       ][Math.floor(Math.random() * 5)],
     }));

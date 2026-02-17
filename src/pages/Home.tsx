@@ -34,7 +34,7 @@ const features = [
     description: "Create your romantic playlist together",
     icon: "🎵",
     path: "/music",
-    gradient: "from-green-500 via-emerald-400 to-teal-500",
+    gradient: "from-rose-500 via-red-400 to-pink-500",
   },
   {
     id: "date-planner",
@@ -82,7 +82,7 @@ const features = [
     description: "Decode hidden messages and unlock rewards",
     icon: "🔐",
     path: "/decoder",
-    gradient: "from-teal-500 via-cyan-400 to-blue-500",
+    gradient: "from-orange-500 via-red-400 to-rose-500",
   },
   {
     id: "flashcards",

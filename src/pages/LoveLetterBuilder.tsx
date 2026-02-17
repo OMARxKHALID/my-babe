@@ -27,7 +27,7 @@ const LoveLetterBuilder = () => {
     title: "",
     content: "",
     font: "serif",
-    color: "hsl(150, 20%, 15%)",
+    color: "hsl(350, 20%, 15%)",
     createdAt: new Date(),
   });
   const [isEditing, setIsEditing] = useState(false);
@@ -41,9 +41,9 @@ const LoveLetterBuilder = () => {
   ];
 
   const colors = [
-    { name: "Dark", value: "hsl(150, 20%, 15%)" },
-    { name: "Primary", value: "hsl(145, 35%, 55%)" },
-    { name: "Accent", value: "hsl(155, 40%, 40%)" },
+    { name: "Dark", value: "hsl(350, 20%, 15%)" },
+    { name: "Primary", value: "hsl(350, 35%, 55%)" },
+    { name: "Accent", value: "hsl(350, 40%, 40%)" },
     { name: "Romantic", value: "hsl(350, 60%, 50%)" },
   ];
 
@@ -88,7 +88,7 @@ const LoveLetterBuilder = () => {
       title: "",
       content: "",
       font: "serif",
-      color: "hsl(150, 20%, 15%)",
+      color: "hsl(350, 20%, 15%)",
       createdAt: new Date(),
     });
     setIsEditing(false);
@@ -222,7 +222,7 @@ const LoveLetterBuilder = () => {
                       title: "",
                       content: "",
                       font: "serif",
-                      color: "hsl(150, 20%, 15%)",
+                      color: "hsl(350, 20%, 15%)",
                       createdAt: new Date(),
                     });
                     setIsEditing(false);

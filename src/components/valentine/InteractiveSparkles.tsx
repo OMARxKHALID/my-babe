@@ -68,7 +68,7 @@ const InteractiveSparkles = ({ isActive }: InteractiveSparklesProps) => {
             ease: "easeOut",
           }}
         >
-          <svg width={sparkle.size} height={sparkle.size} viewBox="0 0 24 24" fill="hsl(145, 50%, 65%)">
+          <svg width={sparkle.size} height={sparkle.size} viewBox="0 0 24 24" fill="hsl(350, 50%, 65%)">
             <path d="M12 0L14.59 8.41L23 11L14.59 13.59L12 22L9.41 13.59L1 11L9.41 8.41L12 0Z" />
           </svg>
         </motion.div>

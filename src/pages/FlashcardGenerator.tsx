@@ -602,7 +602,7 @@ const FlashcardGenerator = () => {
                               className={`w-full p-4 rounded-lg text-left transition-all ${
                                 showAnswer
                                   ? isCorrect
-                                    ? "bg-green-500 text-white border-2 border-green-600"
+                                    ? "bg-primary text-white border-2 border-primary/50"
                                     : isSelected && !isCorrect
                                       ? "bg-red-500 text-white border-2 border-red-600"
                                       : "bg-muted/50 text-muted-foreground border-2 border-transparent"
@@ -648,7 +648,7 @@ const FlashcardGenerator = () => {
                             currentSet.flashcards[currentCardIndex].back
                               .toLowerCase()
                               .trim()
-                              ? "rgba(34, 197, 94, 0.1)"
+                              ? "rgba(244, 63, 94, 0.1)"
                               : "rgba(239, 68, 68, 0.1)",
                         }}
                       >
@@ -755,7 +755,7 @@ const FlashcardGenerator = () => {
                     {[
                       { label: "Again", value: 0, color: "bg-red-500" },
                       { label: "Hard", value: 25, color: "bg-orange-500" },
-                      { label: "Good", value: 75, color: "bg-green-500" },
+                      { label: "Good", value: 75, color: "bg-teal-500" },
                       { label: "Easy", value: 100, color: "bg-blue-500" },
                     ].map(({ label, value, color }) => (
                       <button

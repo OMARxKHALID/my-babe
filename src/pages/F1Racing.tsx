@@ -536,7 +536,7 @@ const F1Racing = () => {
               </div>
               <div className="bg-black/80 backdrop-blur-sm p-4 rounded-lg border-2 border-gray-700 text-center">
                 <p className="text-xs text-gray-400 font-bold mb-1">DISTANCE</p>
-                <p className="text-2xl font-black text-green-400">
+                <p className="text-2xl font-black text-rose-500">
                   {Math.round(position.z)}m
                 </p>
               </div>
@@ -591,7 +591,7 @@ const F1Racing = () => {
                   TIME: {formatTime(raceTime)}
                 </p>
                 {bestTime && raceTime < bestTime && (
-                  <p className="text-green-400 font-black mb-6 text-3xl">
+                  <p className="text-yellow-400 font-black mb-6 text-3xl">
                     🎉 NEW BEST TIME!
                   </p>
                 )}

@@ -1,13 +1,13 @@
-import { useState } from 'react';
-import { motion, AnimatePresence } from 'framer-motion';
-import FloatingHearts from '@/components/valentine/FloatingHearts';
-import Confetti from '@/components/valentine/Confetti';
-import { useSound } from '@/hooks/useSound';
+import { useState } from "react";
+import { motion, AnimatePresence } from "framer-motion";
+import FloatingHearts from "@/components/valentine/FloatingHearts";
+import Confetti from "@/components/valentine/Confetti";
+import { useSound } from "@/hooks/useSound";
 
 interface Puzzle {
   id: number;
-  type: 'caesar' | 'reverse' | 'substitution' | 'morse';
-  difficulty: 'easy' | 'medium' | 'hard';
+  type: "caesar" | "reverse" | "substitution" | "morse";
+  difficulty: "easy" | "medium" | "hard";
   encoded: string;
   decoded: string;
   hint: string;
@@ -17,54 +17,54 @@ interface Puzzle {
 const puzzles: Puzzle[] = [
   {
     id: 1,
-    type: 'caesar',
-    difficulty: 'easy',
-    encoded: 'Kpio cp f yknn',
-    decoded: 'Love is a gift',
-    hint: 'Shift each letter back by 2',
-    reward: '💕',
+    type: "caesar",
+    difficulty: "easy",
+    encoded: "Kpio cp f yknn",
+    decoded: "Love is a gift",
+    hint: "Shift each letter back by 2",
+    reward: "💕",
   },
   {
     id: 2,
-    type: 'reverse',
-    difficulty: 'easy',
-    encoded: 'uoy evol I',
-    decoded: 'I love you',
-    hint: 'Read it backwards',
-    reward: '❤️',
+    type: "reverse",
+    difficulty: "easy",
+    encoded: "uoy evol I",
+    decoded: "I love you",
+    hint: "Read it backwards",
+    reward: "❤️",
   },
   {
     id: 3,
-    type: 'substitution',
-    difficulty: 'medium',
-    encoded: 'YBLF ZPV',
-    decoded: 'LOVE YOU',
-    hint: 'Each letter is shifted forward by 1',
-    reward: '💖',
+    type: "substitution",
+    difficulty: "medium",
+    encoded: "YBLF ZPV",
+    decoded: "LOVE YOU",
+    hint: "Each letter is shifted forward by 1",
+    reward: "💖",
   },
   {
     id: 4,
-    type: 'morse',
-    difficulty: 'medium',
-    encoded: '.-.. --- ...- . / -.-- --- ..-',
-    decoded: 'LOVE YOU',
-    hint: 'Morse code: . = dot, - = dash',
-    reward: '🌹',
+    type: "morse",
+    difficulty: "medium",
+    encoded: ".-.. --- ...- . / -.-- --- ..-",
+    decoded: "LOVE YOU",
+    hint: "Morse code: . = dot, - = dash",
+    reward: "🌹",
   },
   {
     id: 5,
-    type: 'caesar',
-    difficulty: 'hard',
-    encoded: 'Qxgt vjg yqtm',
-    decoded: 'Meet the world',
-    hint: 'Shift back by 2',
-    reward: '✨',
+    type: "caesar",
+    difficulty: "hard",
+    encoded: "Qxgt vjg yqtm",
+    decoded: "Meet the world",
+    hint: "Shift back by 2",
+    reward: "✨",
   },
 ];
 
 const SecretMessageDecoder = () => {
   const [currentPuzzle, setCurrentPuzzle] = useState(0);
-  const [userAnswer, setUserAnswer] = useState('');
+  const [userAnswer, setUserAnswer] = useState("");
   const [solvedPuzzles, setSolvedPuzzles] = useState<number[]>([]);
   const [showHint, setShowHint] = useState(false);
   const [showReward, setShowReward] = useState(false);
@@ -72,7 +72,7 @@ const SecretMessageDecoder = () => {
 
   const decodeCaesar = (text: string, shift: number): string => {
     return text
-      .split('')
+      .split("")
       .map((char) => {
         if (char.match(/[a-z]/i)) {
           const code = char.charCodeAt(0);
@@ -81,7 +81,7 @@ const SecretMessageDecoder = () => {
         }
         return char;
       })
-      .join('');
+      .join("");
   };
 
   const checkAnswer = () => {
@@ -92,18 +92,18 @@ const SecretMessageDecoder = () => {
     if (normalizedAnswer === normalizedDecoded) {
       setSolvedPuzzles([...solvedPuzzles, puzzle.id]);
       setShowReward(true);
-      playSound('success');
+      playSound("success");
       setTimeout(() => {
         setShowReward(false);
         if (currentPuzzle < puzzles.length - 1) {
           setCurrentPuzzle(currentPuzzle + 1);
-          setUserAnswer('');
+          setUserAnswer("");
           setShowHint(false);
         }
       }, 2000);
     } else {
-      playSound('buttonClick');
-      alert('Not quite right! Try again or use the hint.');
+      playSound("buttonClick");
+      alert("Not quite right! Try again or use the hint.");
     }
   };
 
@@ -113,7 +113,7 @@ const SecretMessageDecoder = () => {
     <div className="min-h-screen gradient-romantic relative">
       <FloatingHearts count={15} />
       <Confetti isActive={showReward} />
-      
+
       <div className="container max-w-3xl mx-auto px-4 py-12">
         <motion.div
           className="text-center mb-12"
@@ -166,16 +166,18 @@ const SecretMessageDecoder = () => {
               <div className="flex justify-between items-center mb-4">
                 <span
                   className={`px-3 py-1 rounded text-xs font-medium ${
-                    puzzles[currentPuzzle].difficulty === 'easy'
-                      ? 'bg-green-100 text-green-700'
-                      : puzzles[currentPuzzle].difficulty === 'medium'
-                      ? 'bg-yellow-100 text-yellow-700'
-                      : 'bg-red-100 text-red-700'
+                    puzzles[currentPuzzle].difficulty === "easy"
+                      ? "bg-blue-100 text-blue-700"
+                      : puzzles[currentPuzzle].difficulty === "medium"
+                        ? "bg-yellow-100 text-yellow-700"
+                        : "bg-red-100 text-red-700"
                   }`}
                 >
                   {puzzles[currentPuzzle].difficulty.toUpperCase()}
                 </span>
-                <span className="text-2xl">{puzzles[currentPuzzle].reward}</span>
+                <span className="text-2xl">
+                  {puzzles[currentPuzzle].reward}
+                </span>
               </div>
 
               <div className="bg-muted/50 rounded-lg p-6 mb-4">
@@ -189,7 +191,7 @@ const SecretMessageDecoder = () => {
                   <motion.div
                     className="bg-primary/10 rounded-lg p-4 mb-4"
                     initial={{ opacity: 0, height: 0 }}
-                    animate={{ opacity: 1, height: 'auto' }}
+                    animate={{ opacity: 1, height: "auto" }}
                     exit={{ opacity: 0, height: 0 }}
                   >
                     <p className="text-sm text-primary">
@@ -205,7 +207,7 @@ const SecretMessageDecoder = () => {
                 onChange={(e) => setUserAnswer(e.target.value)}
                 placeholder="Enter your decoded message..."
                 className="w-full px-4 py-3 rounded-lg border-2 border-primary/30 focus:border-primary focus:outline-none mb-4"
-                onKeyPress={(e) => e.key === 'Enter' && checkAnswer()}
+                onKeyPress={(e) => e.key === "Enter" && checkAnswer()}
               />
 
               <div className="flex gap-3">
@@ -218,11 +220,11 @@ const SecretMessageDecoder = () => {
                 <button
                   onClick={() => {
                     setShowHint(!showHint);
-                    playSound('sparkle');
+                    playSound("sparkle");
                   }}
                   className="px-6 py-3 bg-primary/10 text-primary rounded-lg hover:bg-primary/20"
                 >
-                  {showHint ? 'Hide' : 'Show'} Hint
+                  {showHint ? "Hide" : "Show"} Hint
                 </button>
               </div>
             </div>
@@ -236,7 +238,9 @@ const SecretMessageDecoder = () => {
             initial={{ opacity: 0, scale: 0.9 }}
             animate={{ opacity: 1, scale: 1 }}
           >
-            <h2 className="text-3xl font-medium mb-4">🎉 Congratulations! 🎉</h2>
+            <h2 className="text-3xl font-medium mb-4">
+              🎉 Congratulations! 🎉
+            </h2>
             <p className="text-lg text-muted-foreground mb-6">
               You've decoded all the secret messages!
             </p>
@@ -244,9 +248,9 @@ const SecretMessageDecoder = () => {
               onClick={() => {
                 setCurrentPuzzle(0);
                 setSolvedPuzzles([]);
-                setUserAnswer('');
+                setUserAnswer("");
                 setShowHint(false);
-                playSound('success');
+                playSound("success");
               }}
               className="px-8 py-3 btn-romantic"
             >

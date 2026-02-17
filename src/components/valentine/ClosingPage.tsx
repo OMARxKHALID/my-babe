@@ -43,7 +43,7 @@ const ClosingPage = ({ onReplay }: ClosingPageProps) => {
                 repeat: Infinity,
               }}
             >
-              <HeartIcon size={40} color="hsl(145, 40%, 55%)" />
+              <HeartIcon size={40} color="hsl(350, 40%, 55%)" />
             </motion.div>
           ))}
         </motion.div>
@@ -96,7 +96,7 @@ const ClosingPage = ({ onReplay }: ClosingPageProps) => {
             animate={{ rotate: [0, 180, 360], scale: [1, 1.2, 1] }}
             transition={{ duration: 4, repeat: Infinity }}
           >
-            <SparkleIcon size={24} color="hsl(145, 35%, 60%)" />
+            <SparkleIcon size={24} color="hsl(350, 35%, 60%)" />
           </motion.div>
           <motion.div
             animate={{ rotate: [360, 180, 0], scale: [1.2, 1, 1.2] }}
@@ -144,7 +144,7 @@ const ClosingPage = ({ onReplay }: ClosingPageProps) => {
         >
           <HeartIcon
             size={24}
-            color="hsl(145, 35%, 55%)"
+            color="hsl(350, 35%, 55%)"
             className="opacity-40"
           />
         </motion.div>
@@ -155,7 +155,7 @@ const ClosingPage = ({ onReplay }: ClosingPageProps) => {
         >
           <HeartIcon
             size={20}
-            color="hsl(145, 35%, 55%)"
+            color="hsl(350, 35%, 55%)"
             className="opacity-30"
           />
         </motion.div>
@@ -166,7 +166,7 @@ const ClosingPage = ({ onReplay }: ClosingPageProps) => {
         >
           <HeartIcon
             size={28}
-            color="hsl(145, 35%, 55%)"
+            color="hsl(350, 35%, 55%)"
             className="opacity-35"
           />
         </motion.div>

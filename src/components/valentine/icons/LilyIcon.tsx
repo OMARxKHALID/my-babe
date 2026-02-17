@@ -21,7 +21,7 @@ const LilyIcon = ({ size = 120, color = 'hsl(320, 70%, 75%)', className = '', de
       {/* Stem */}
       <motion.path
         d="M40 128 Q38 100 40 70"
-        stroke="hsl(145, 40%, 45%)"
+        stroke="hsl(350, 40%, 45%)"
         strokeWidth="4"
         fill="none"
         strokeLinecap="round"
@@ -33,7 +33,7 @@ const LilyIcon = ({ size = 120, color = 'hsl(320, 70%, 75%)', className = '', de
       {/* Leaves */}
       <motion.path
         d="M40 100 Q20 90 15 70 Q30 80 40 85"
-        fill="hsl(145, 45%, 50%)"
+        fill="hsl(350, 45%, 50%)"
         initial={{ scale: 0, opacity: 0 }}
         animate={{ scale: 1, opacity: 1 }}
         transition={{ duration: 0.8, delay: delay + 0.8 }}
@@ -42,7 +42,7 @@ const LilyIcon = ({ size = 120, color = 'hsl(320, 70%, 75%)', className = '', de
       
       <motion.path
         d="M40 85 Q60 75 65 55 Q50 65 40 75"
-        fill="hsl(145, 45%, 50%)"
+        fill="hsl(350, 45%, 50%)"
         initial={{ scale: 0, opacity: 0 }}
         animate={{ scale: 1, opacity: 1 }}
         transition={{ duration: 0.8, delay: delay + 1 }}
